@@ -1,0 +1,130 @@
+@media only screen and (max-width: 1160px) 
+{
+
+}
+
+@media only screen and (max-width: 992px)
+{
+    .nav1{
+        display: block;
+    }
+    .nav-h2{
+        width:100%;
+    }
+    .nav-menu{
+        display: block;
+        position: absolute;
+        top: 48%;
+        width: 30%;
+        height: 97%;
+        text-align: center;
+    }
+    .hero-h2{
+        display: block;
+    }
+    .row3-1{
+        display: block;
+        position: absolute;
+        left: 30%;
+        width: 70%;
+    }
+    .row3-img{
+        display: block;
+        position: absolute;
+        top:115%;
+        left:65%;
+        width: 35%;
+        padding-top:80px ;
+        padding-bottom: 80px;
+    }
+    .row3-extra{
+        display: block;
+        position: absolute;
+        top:115%;
+        left: 30%;
+        width: 35%;
+        padding-top:80px ;
+        padding-bottom: 80px;
+    
+    }
+    .banner-main{
+        display: block;
+        position: absolute;
+        left:30%;
+        top:85%;
+        width: 70%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+
+}
+
+@media only screen and (max-width: 576px)
+{
+    .nav1{
+        display:block;
+    }
+    .nav-h2{
+       display: block;
+       padding-top: 30px;
+       padding-bottom: 30px;
+    }
+    .nav-menu{
+        display:block;
+        position: absolute;
+        height: 30%;
+        width: 100%;
+        top: 18%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+           }
+    .hero-h2{
+        display: block;
+        position: absolute;
+        top: 46%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .row3-1{
+        display:block;
+        position: absolute;
+        top: 64%;
+        left: 0%;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+       
+    }
+    .row3-img{
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 117%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      
+    }
+    .row3-extra{
+        display:block;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left:0%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+    .banner-main{
+        display:block;
+        left: 0%;
+        width: 100%;
+        top: 82%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

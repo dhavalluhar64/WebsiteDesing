@@ -1,0 +1,56 @@
+.flex-main2{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+
+.flex-1{
+    background-color: aqua;
+    border: 2px solid black;
+    width: 25%;
+    padding: 20px;
+    font-weight: 500;
+}
+
+
+.flex-2{
+    background-color: aqua;
+    border: 2px solid black;
+    width: 25%;
+    padding: 20px;
+    margin-left: 20px;
+   /* margin-top: 20px; */
+   font-weight: 500;
+}
+
+.flex-3{
+    background-color: aqua;
+    border: 2px solid black;
+    margin-left: 20px;
+    padding-top: 20px;
+    width: 25%;
+    font-weight: 500;
+    /* margin-top: 130px; */
+    /* align-items: center; */
+}
+.flex3-btn {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 15px;
+}
+
+
+
+.flex3-p1 {
+    padding: 10px;
+}
+.flex3-p2{
+    padding: 10px;
+}
+
+.flex3-btn2 .flex3-btn3{
+    /* border: 2px solid black; */
+    width: 100%;
+}

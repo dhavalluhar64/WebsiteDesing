@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+  
+}
+.sun{
+    background: url(img/file.png);
+    background-position: 290px -20px;
+    background-size: 60% 110%;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 80%;
+    background-color: #EB9800;
+    /* border: 2px solid; */
+    margin: 50px auto;
+    position: relative;
+    z-index: 2;
+   
+    
+    
+}
+.sun-1{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    /* border: 2px solid; */
+    transform: translate(75%,25%);
+    z-index: 1;
+    /* background-color: rgba(0, 0, 255, 0.5); */
+    
+    
+    
+   
+   
+    
+    
+}
+.sun-1,img{
+    height: 80%;
+    width: 50%;
+   
+    
+}
+
+
+
