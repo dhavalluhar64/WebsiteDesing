@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    span {
+
+        color: red;
+    }
+
+    input[type="email"]:focus-visible {
+        outline: none;
+    }
+</style>
+
+<body>
+
+    <!-- Q.55 Form in Email, number, Password, Validation? -->
+
+
+    <form action="" method="post">
+
+        <label for="">Email-Id:</label>
+        <input type="email" onkeyup="return email_check()" name="e_mail" id="email1"
+            placeholder="Please Enter your Email Id">
+        <span id="err1"></span>
+        <br><br>
+        <label for="">Number:</label>
+        <input type="text" onblur="return mobile_length()" onkeyup="return mobile_ex()" id="mno" name="" maxlength="10">
+        <br>
+        <span id="err2"></span>
+        <br>
+        <span id="err3"></span>
+        <br>
+        <label for="">Password:</label>
+        <input type="password" onkeyup="return password_ex()" name="" id="pass1">
+        <span id="err4"></span>
+        <br><br>
+        <label for="">Confirm-Password</label>
+        <input type="password" onkeyup="return confirm_pass()" name="" id="Confirm1">
+        <span id="err5"></span>
+        <br><br>
+        <button type="submit" onclick="return email_blank(),number_check(),pass_blanck()">Submit</button>
+
+
+    </form>
+
+
+    <script>
+
+        // <!---Email-validation-->
+
+        function email_blank() {
+
+            let email2 = document.getElementById("email1").value;
+
+            if (email2 == "" || email2 == null) {
+
+                document.getElementById("err1").innerText = "Please Enter an Email Address.";
+                document.getElementById("email1").innerHTML = "<style>#email1{boder :1px solid red}</style>";
+                return false;
+            }
+
+        }
+
+        function email_check() {
+
+            let email2 = document.getElementById("email1").value;
+
+            let regex = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+
+            if (email2.test(regex)) {
+
+                document.getElementById("err1").innerHTML = "";
+                return false;
+
+            } else {
+
+                document.getElementById("err1").innerText = "Please enter a valid email address";
+                return false
+            }
+        }
+
+        // <!--mobile Number--->
+
+        function number_check() {
+
+            let mobile = document.getElementById("mno").value;
+
+            if (mobile == "" || mobile == null) {
+
+                document.getElementById("err2").innerHTML = "Enter your mobile number";
+                return false;
+            }
+        }
+
+
+        function mobile_length() {
+
+            let mobileNum = document.getElementById("mno").value;
+
+            if (mobileNum.length < 10) {
+
+                document.getElementById("err2").innerText = "Enter a valid Number";
+                return false;
+
+            } else {
+
+                document.getElementById("err2").innerHTML = ""
+                return false;
+            }
+
+        }
+
+
+        function mobile_ex() {
+
+            let mobile1 = document.getElementById("mno").value;
+
+            let regex1 = /^[0-9]*$/;
+
+            if (mobile1.match(regex1)) {
+
+                document.getElementById("err3").innerHTML = "";
+                return false;
+
+            } else {
+
+                document.getElementById("err3").innerText = "Alphabet Not allowed";
+                return false;
+            }
+        }
+
+        // <!--pass validation--->
+
+        function pass_blanck() {
+
+            let pass1 = document.getElementById("pass1").value;
+            let pass2 = document.getElementById("Confirm1").value;
+
+            if (pass1 == "" && pass2 == "") {
+
+                document.getElementById("err4").innerText = "Enter Password";
+                document.getElementById("err5").innerText = "Enter Confirm Password";
+                return false;
+            }
+        }
+
+        function password_ex() {
+
+            let pass1 = document.getElementById("pass1").value;
+            let regex2 = /^[a-zA-Z0-9!@#\$%\^\&*_=+\-]{8,12}$/
+
+            if (regex2.test(pass1)) {
+
+                document.getElementById("err4").innerHTML = "";
+                return false;
+
+            } else {
+
+                document.getElementById("err4").innerHTML = "Enter Proper Password";
+                return false;
+            }
+        }
+
+
+        function confirm_pass() {
+
+            let pass1 = document.getElementById("pass1").value;
+            let pass2 = document.getElementById("Confirm1").value;
+
+
+            if (pass2 != pass1) {
+
+                document.getElementById("err5").innerText = "Password and confirm password dose not match";
+                return false;
+            } else {
+
+                document.getElementById("err5").innerHTML = "";
+                return false;
+            }
+
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

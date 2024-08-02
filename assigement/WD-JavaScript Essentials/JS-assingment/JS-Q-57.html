@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<button id="myButton">check me</button><br><br>
+
+
+
+<body>
+
+    <!-- Q.(57) how many type of JS Event? How to use it ? -->
+
+
+    <!-- 1. Mouse Events
+
+    Examples: click, dblclick, mouseover, mouseout, mousemove, mousedown, mouseup.
+
+    *Usage: -->
+    <!-- <script>
+        const button = document.getElementById('myButton');
+        button.addEventListener('click', function () {
+            alert('Button clicked!');
+        });
+    </script> -->
+
+
+
+    <!-- 2. Keyboard Events
+
+       Examples: keydown, keyup, keypress
+
+    *Usage: -->
+    <!-- <script>
+
+        document.addEventListener('keydown', function (event) {
+            console.log(`Key pressed: ${event.key}`);
+        });
+    </script> -->
+
+
+    <!-- 
+     3. Form Events
+
+     Examples: submit, change, focus, blur, input
+
+    *Usage: -->
+
+    <!-- <script>
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevents form submission
+            console.log('Form submitted!');
+        });
+
+    </script> -->
+
+
+    <!-- 4. Window Events
+
+    Examples: load, resize, scroll, unload, beforeunload.
+
+    *Usage: -->
+    <!-- <script>
+        window.addEventListener('resize', function () {
+            console.log('Window resized!');
+        });
+
+    </script> -->
+
+
+    <!-- 5. Touch Events (for mobile devices)
+
+    Examples: touchstart, touchmove, touchend, touchcancel.
+
+    *Usage: -->
+    <!-- <script>
+        const touchArea = document.getElementById('touchArea');
+        touchArea.addEventListener('touchstart', function (event) {
+            console.log('Touch started!');
+        });
+
+    </script> -->
+
+
+
+    <!-- 6. Pointer Events
+
+    Examples: pointerdown, pointerup, pointermove.
+
+    *Usage: -->
+    <!-- <script>
+        const pointerArea = document.getElementById('pointerArea');
+        pointerArea.addEventListener('pointerdown', function (event) {
+            console.log('Pointer down!');
+        });
+
+
+    </script> -->
+
+
+
+    <!-- 7. Clipboard Events
+
+    Examples: copy, cut, paste
+
+    *Usage: -->
+
+    <!-- <script>
+
+        document.addEventListener('paste', function (event) {
+            console.log('Content pasted!');
+        });
+
+    </script> -->
+
+
+
+    <!-- 8. Media Events
+
+    Examples: play, pause, ended, volumechange.
+
+    *Usage: -->
+
+    <!-- <script>
+        const video = document.getElementById('myVideo');
+        video.addEventListener('play', function () {
+            console.log('Video is playing!');
+        });
+
+    </script> -->
+
+
+
+    <!-- 9. Animation and Transition Events
+
+    Examples: animationstart, animationend, transitionend.
+
+    *Usage: -->
+    <!-- <script>
+        const element = document.getElementById('myElement');
+        element.addEventListener('animationend', function () {
+            console.log('Animation ended!');
+        });
+
+    </script> -->
+
+
+
+    <!-- 10. Custom Events
+
+    You can create and dispatch your own events.
+
+    *Usage: -->
+
+    <!-- <script>
+        const myEvent = new CustomEvent('myCustomEvent', { detail: { someData: 'value' } });
+        document.addEventListener('myCustomEvent', function (event) {
+            console.log(event.detail.someData); // 'value'
+        });
+        document.dispatchEvent(myEvent);
+
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

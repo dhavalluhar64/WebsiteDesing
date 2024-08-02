@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Q.(31) Write a JavaScript Program to display the current day and time in the following
+format. Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ? -->
+
+    <div class="content">
+        <div class="day"></div>
+        <div class="time"></div>
+    </div>
+
+    <script>
+
+        var today = new Date();
+
+        var day1 = today.getDay();
+
+
+        var dayList1 = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        document.querySelector(".day").innerHTML = "Today is : " + dayList1[day1] + "."
+       
+        var hour = today.getHours()
+
+        var minit = today.getMinutes();
+
+        var second = today.getSeconds();
+
+        var prepand = (hour >= 12) ? "PM" : "AM";
+
+        hour = (hour >= 12) ? hour - 12 : hour;
+
+
+        if (hour === 0 && prepand === 0) {
+
+            if (minit === 0 && second === 0) {
+
+                hour = 12;
+                prepand = "Noon";
+
+            }else{
+
+                hour = 12;
+                prepand = "PM";
+            }
+        }
+
+        if(hour === 0 && prepand === "AM"){
+
+            if(minit === 0 && second === 0){
+
+                hour = 12;
+                prepand = "Midnight";
+
+            }else{
+
+                hour = 12;
+                prepand = "AM";
+            }
+        }
+
+        console.log("Current time is :" + hour + prepand + " : " + minit + " : " +second);
+
+        document.querySelector(".time").innerHTML = "Current time is :" + hour + prepand + " : " + minit + " : " +second
+
+
+    </script>
+
+</body>
+
+</html>

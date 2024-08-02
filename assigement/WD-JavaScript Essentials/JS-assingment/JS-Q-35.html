@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Q.35 Write a JavaScript program to capitalize first letter of a string? -->
+
+
+    <script>
+
+        let NameString = "dhaval panchal";
+
+
+        function capitalize(str) {
+
+            if (str.length === 0) {
+
+                return str;
+            }
+
+            let fisrtchar = '';
+
+            for (let i = 0; i < 1; i++) {
+
+                fisrtchar = fisrtchar + str[i];
+            }
+
+
+            const lowerToUpper = {
+                'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D', 'e': 'E',
+                'f': 'F', 'g': 'G', 'h': 'H', 'i': 'I', 'j': 'J',
+                'k': 'K', 'l': 'L', 'm': 'M', 'n': 'N', 'o': 'O',
+                'p': 'P', 'q': 'Q', 'r': 'R', 's': 'S', 't': 'T',
+                'u': 'U', 'v': 'V', 'w': 'W', 'x': 'X', 'y': 'Y',
+                'z': 'Z'
+            }
+
+            if (lowerToUpper[fisrtchar]) {
+
+                fisrtchar = lowerToUpper[fisrtchar];
+            }
+
+            let result = fisrtchar;
+
+            for (let a = 1; a < str.length; a++) {
+
+                result = result + str[a];
+            }
+            return result;
+        }
+        console.log(capitalize(NameString));
+
+    </script>
+
+
+
+</body>
+
+</html>

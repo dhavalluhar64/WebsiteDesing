@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <!-- Q.30 Accept 3 numbers from user using while loop and check each numbers palindrome -->
+
+
+    <script>
+
+        let string = prompt("Please Enter a String")
+
+        let len = string.length;
+        let massage = "It is Palindrome number";
+
+        let a = 0;
+
+        while (a < len / 2) {
+
+            a++;
+
+            if (string[a] != string[len - 1 - a]) {
+
+                massage = "is Not Palindrome Number";
+            }
+        }
+        console.log(string, massage);
+        document.write(string," = ", massage);
+
+    </script>
+
+</body>
+
+</html>

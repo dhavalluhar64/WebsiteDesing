@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    button {
+
+        padding: 15px 50px;
+        border: none;
+        background-color: aquamarine;
+        cursor: pointer;
+        font-size: 15px;
+
+
+    }
+
+    button:hover {
+
+        border: 1px solid black;
+    }
+
+    #btn {
+
+        background-color: aquamarine;
+    }
+</style>
+
+<body>
+
+    <div class="main">
+
+        <button id="btn" onclick="changeBG('#532187')">Change BG Color</button>
+
+    </div>
+
+
+
+    <script>
+
+
+
+        function changeBG(Color) {
+
+            //  document.body.style.backgroundColor = Color;
+
+            let currentcolor = document.body.style.backgroundColor;
+
+
+            if (currentcolor === "rgb(83,33,135)" || currentcolor === "#532187") {
+
+
+                document.body.style.backgroundColor = "white";
+
+            } else {
+
+                document.body.style.backgroundColor = "#532187";
+            }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

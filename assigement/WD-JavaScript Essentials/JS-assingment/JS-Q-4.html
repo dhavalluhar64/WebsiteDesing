@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Q.(4) Write a JavaScript program to calculate days left until next Christmas? -->
+
+
+    <script>
+
+
+        function dayUntilChristmas() {
+
+            let today = new Date();
+
+            let curretyear = today.getFullYear();
+
+            let Christmas1 = new Date(curretyear, 11, 25);
+
+
+            if (today > Christmas1) {
+
+                Christmas1.setFullYear(curretyear + 1);
+            }
+
+
+            let difference = Christmas1 - today;
+
+            let milisecond = 1000 * 60 * 60 * 24;
+
+            let leftday = (difference / milisecond) | 0;
+
+            return leftday;
+        }
+
+        console.log("Day until Christmas:", dayUntilChristmas());
+
+
+    </script>
+
+
+</body>
+
+</html>

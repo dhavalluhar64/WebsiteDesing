@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <!-- Q.(32) Write a JavaScript program to get the current date? -->
+
+<div class="content">
+    <div id="time"></div>
+</div>
+
+
+<script>
+
+    let today = new Date();
+
+    let day = today.getDate();
+    
+    let month = today.getMonth() + 1;
+
+    let year = today.getFullYear();
+
+
+
+    document.getElementById("time").innerHTML = "Current Date : " + day + "/" + month + "/" +year
+
+    console.log("Current Date :" + day + "/" + month + "/" +year)
+</script>
+
+
+
+
+
+</body>
+</html>

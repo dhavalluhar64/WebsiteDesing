@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Q.27 Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: - -->
+    <!-- 5) in JS? -->
+
+
+    <script>
+
+        let number = 1234;
+
+        function samation(number) {
+
+
+            let lastNumber = number % 10;
+
+            let firstNumber = number
+
+            while (firstNumber >= 10) {
+
+                firstNumber = parseInt(firstNumber / 10);
+            }
+
+            firstNumber = parseInt(firstNumber);
+
+            return firstNumber + lastNumber;
+
+        }
+
+        let output = samation(number);
+
+        console.log("The sum of first and Last digit Number = ", output);
+    </script>
+
+
+
+</body>
+
+</html>

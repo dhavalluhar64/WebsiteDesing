@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Q.33 Write a JavaScript program to compare two objects? -->
+
+
+    <script>
+
+        const obj1 = {
+
+            name: "Dhaval",
+            age: 21,
+            course: "Fron-ted Developer"
+        };
+
+        const obj2 = {
+
+            age: 21,
+            course: "Fron-ted Developer"
+        }
+
+        // console.log(obj1 == obj2); // false
+        // console.log(obj1 === obj2); // false
+
+
+        function check(obj1, obj2) {
+
+            for (let val in obj2) {
+
+                if (obj1[val] !== obj2[val]) {
+
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        console.log(check(obj1, obj2)); // true;
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

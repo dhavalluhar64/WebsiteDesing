@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Q.34 Write a JavaScript program to convert an array of objects into CSV string? -->
+
+
+    <script>
+
+
+
+        var data = [
+            { Name: 'Dhaval', Age: 21, City: 'Himatnagar' },
+            { Name: 'Rohan', Age: 22, City: 'Himatnagar' },
+            { Name: 'jaimin', Age: 22, City: 'Deesa' }
+        ];
+
+        function arrayToCSV(array) {
+            if (!array.length) {
+                return '';
+            }
+
+            // Extract headers
+            var headers = [];
+            for (var key in array[0]) {
+                if (array[0].hasOwnProperty(key)) {
+                    headers[headers.length] = key;
+                }
+            }
+
+            var csvString = '';
+
+            // Add headers to CSV string
+            for (var i = 0; i < headers.length; i++) {
+                csvString += headers[i];
+                if (i < headers.length - 1) {
+                    csvString += ',';
+                }
+            }
+            csvString += '\n';
+
+            // Add rows to CSV string
+            for (var j = 0; j < array.length; j++) {
+                var row = array[j];
+                for (var k = 0; k < headers.length; k++) {
+                    var value = row[headers[k]];
+                    value = String(value);
+
+                    // Manually escape double quotes by doubling them
+                    var escapedValue = '';
+                    for (var m = 0; m < value.length; m++) {
+                        var char = value[m];
+                        if (char === '"') {
+                            escapedValue += '""';
+                        } else {
+                            escapedValue += char;
+                        }
+                    }
+
+                    // Enclose value in double quotes if it contains a comma or double quote
+                    var containsCommaOrQuote = false;
+                    for (var n = 0; n < escapedValue.length; n++) {
+                        if (escapedValue[n] === ',' || escapedValue[n] === '"') {
+                            containsCommaOrQuote = true;
+                            break;
+                        }
+                    }
+
+                    if (containsCommaOrQuote) {
+                        escapedValue = '"' + escapedValue + '"';
+                    }
+
+                    csvString += escapedValue;
+
+                    if (k < headers.length - 1) {
+                        csvString += ',';
+                    }
+                }
+                csvString += '\n';
+            }
+
+            return csvString;
+        }
+
+
+
+
+        var csvString = arrayToCSV(data);
+        console.log(csvString);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

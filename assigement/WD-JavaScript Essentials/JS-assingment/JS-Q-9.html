@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Q.(9) Write a JavaScript exercise to get the extension of a filename.? -->
+
+
+    <script>
+
+        function getfileextencen(filename) {
+
+            let lastidx = filename.lastIndexOf('.');
+
+
+            if (lastidx > 0 && lastidx < filename.length - 1) {
+
+                return filename.substring(lastidx + 1);
+            }
+
+            return '';
+
+        }
+
+        console.log(getfileextencen("document.pdf"));
+        console.log(getfileextencen("archive.tar.gz"));
+        console.log(getfileextencen("image.jpeg"));
+        console.log(getfileextencen("README"));// ""
+        console.log(getfileextencen("file."));// ""
+        console.log(getfileextencen(".hiddenfile")); // ""
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Q.54 Form Validtion in JS? -->
+
+    <form action="" onsubmit="return count()">
+
+        <div>
+            <input type="text" id="nm1" placeholder="Enter your Name">
+            <span id="er1"></span>
+        </div>
+        <br>
+        <div>
+            <input type="email" id="em1" placeholder="Enter your Email">
+            <span id="er2"></span>
+        </div>
+        <br>
+        <div>
+            <input type="password" id="pw1" placeholder="Enter your password">
+            <span id="er3"></span>
+        </div>
+        <br>
+        <div>
+            <input type="password" id="pw2" placeholder="Enter your confform password">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+
+        </div>
+    </form>
+
+
+
+    <script>
+
+        name1 = document.getElementById("nm1")
+        err1 = document.getElementById("er1")
+
+
+        email2 = document.getElementById("em1")
+        err2 = document.getElementById("er2")
+
+        pass1 = document.getElementById("pw1")
+        err3 = document.getElementById("er3")
+
+        pass = document.getElementById("pw2")
+
+
+
+        function count() {
+
+            if (name1.value == "" || name1.value == null) {
+
+                err1.innerHTML = "Please field Name";
+                err1.style.color = "red";
+                return false;
+
+            } else {
+
+                err1.innerHTML = "";
+            }
+
+            if (email2.value == "" || email2.value == null) {
+
+                err2.innerHTML = "Please field email";
+                err2.style.color = "red";
+                return false;
+
+            } else {
+
+                err2.innerHTML = "";
+            }
+
+            if (pass1.value == "" || pass1.value == null) {
+
+                err3.innerHTML = "Please field Password";
+                err3.style.color = "red";
+                return false;
+
+            } else {
+
+                err3.innerHTML = "";
+            }
+
+            if (pass1.value != pass.value) {
+
+                alert("You are Entering Wrong Password");
+            }
+        }
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Q.56 Dynamic Form Validation in JS? -->
+
+    <div class="main">
+
+        <form action="">
+
+            <label for="">Name:</label>
+            <input type="text" name="" id="name1" placeholder="Enter your name" onblur="return validation(name1,err1)">
+            <span id="err1"></span>
+            <br><br>
+            <label for="">Email:</label>
+            <input type="email" name="" id="email" placeholder="Enter your Email address"
+                onblur="return validation(email,err2)">
+            <span id="err2"></span>
+            <br><br>
+            <label for="">Password:</label>
+            <input type="password" name="" id="pass" placeholder="Enter your Password"
+                onblur="return validation(pass,err3)">
+            <span id="err3"></span>
+            <br><br>
+            <input type="submit">
+
+
+        </form>
+
+
+    </div>
+
+
+
+    <script>
+
+        function validation(index, error) {
+
+            if (index.value == "") {
+
+                error.innerHTML = "Enter your required";
+                error.style.color = "red";
+                return false;
+
+            } else {
+
+                error.innerHTML = "";
+                return false;
+
+            }
+
+
+        }
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

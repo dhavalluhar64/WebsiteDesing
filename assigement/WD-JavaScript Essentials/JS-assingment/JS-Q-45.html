@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Q. (45) Write a JavaScript program to determine if a variable is array? -->
+
+
+    <script>
+
+
+        let first = [1, 2, 3, 4, 5];
+
+        let test = "This is a string";
+
+
+        function isArray(value1) {
+
+            return Array.isArray(value1);
+
+        }
+
+        console.log(isArray(first));// true
+        console.log(isArray(test)); // false
+
+     
+        // <!---typeof length--->
+
+
+        let len = [1, 2, 3, 4];
+
+        if (typeof len === 'object' && len !== null && !isNaN(len.length)) {
+
+            console.log("The len is like a array")
+
+        } else {
+
+            console.log("The len is Not an array");
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+
+        height: 550px;
+        width: 680px;
+        border: 2px solid black;
+    }
+
+    .main #content {
+
+        text-align: center;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 900;
+
+
+    }
+
+    .main #heading {
+
+        text-align: center;
+        font-weight: 600;
+
+
+    }
+
+    .marks {
+
+        text-align: center;
+    }
+
+    input[type="text"] {
+
+        margin: 5px 20px;
+        text-align: center;
+        padding: 5px 0px;
+        width: 55%;
+    }
+
+    .marks .res {
+
+        padding: 10px 0px;
+        width: 20%;
+        margin-top: 15px;
+    }
+
+    .store {
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    span {
+
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <h4 id="content">MarkSheet for Information Technology</h4>
+
+        <h5 id="heading">Enter Marks</h5>
+
+        <div class="marks">
+            <form action="">
+
+                <label for="">1.C Language</label>
+                <input type="text" id="c" maxlength="3" onkeyup="return lenght('c','err1')">
+                <span id="err1" class="errr1"></span>
+                <br>
+                <label for="">2.C++ Language</label>
+                <input type="text" name="" id="c++" maxlength="3" onkeyup="return lenght('c++','err2')">
+                <span id="err2" class="errr1"></span>
+                <br>
+                <label for="">3.Database</label>
+                <input type="text" name="" id="data" maxlength="3" onkeyup="return lenght('data','err3')">
+                <span id="err3" class="errr1"></span>
+                <br>
+                <label for="">4.HTML</label>
+                <input type="text" name="" id="HTML" maxlength="3" onkeyup="return lenght('HTML','err4')">
+                <span id="err4" class="errr1"></span>
+                <br>
+                <label for="">5.CSS</label>
+                <input type="text" name="" id="css" maxlength="3" onkeyup="return lenght('css','err5')">
+                <span id="err5" class="errr1"></span>
+                <br>
+                <label for="">6.php</label>
+                <input type="text" name="" id="php" maxlength="3" onkeyup="return lenght('php','err6')">
+                <span id="err6" class="errr1"></span>
+                <br>
+                <label for="">7.core java</label>
+                <input type="text" name="" id="core" maxlength="3" onkeyup="return lenght('core','err7')">
+                <span id="err7" class="errr1"></span>
+
+            </form>
+            <button id="result" onclick="sub()" class="res">Result</button>
+        </div>
+        <div class="store">
+            <h4>Total is:<span id="total"></span>/350</h4>
+            <h4>Percentage is:<span id="percentage"></span></h4>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+
+
+
+
+        function sub() {
+
+
+            let clang = parseInt(document.getElementById("c").value) || 0;
+            let plus = parseInt(document.getElementById("c++").value) || 0;
+            let data = parseInt(document.getElementById("data").value) || 0;
+            let html = parseInt(document.getElementById("HTML").value) || 0;
+            let css = parseInt(document.getElementById("css").value) || 0;
+            let php = parseInt(document.getElementById("php").value) || 0;
+            let core = parseInt(document.getElementById("core").value) || 0;
+
+            let sub = clang + plus + data + html + css + php + core;
+
+            let percentage = (sub / 350) * 100;
+
+
+            let pars = percentage * 100;
+
+            let pars1 = (parseInt(pars + 0.5)) / 100;
+
+            document.getElementById("total").innerHTML = sub;
+
+
+            document.getElementById("percentage").innerHTML = + pars1 + "%";
+
+
+        }
+
+        let count1 = document.getElementById("c");
+        let count2 = document.getElementById("c++");
+        let count3 = document.getElementById("data");
+        let count4 = document.getElementById("HTML");
+        let count5 = document.getElementById("css");
+        let count6 = document.getElementById("php");
+        let count7 = document.getElementById("core");
+
+        let regex = /^[0-9]*$/
+
+        function lenght(input, error) {
+
+
+            let inputvalue = document.getElementById(input);
+            let errvalue = document.getElementById(error);
+
+
+            if (inputvalue.value.match(regex)) {
+
+                errvalue.innerHTML = "";
+                return false;
+
+            } else {
+
+                errvalue.innerHTML = "Alphabet Not Allowed";
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .main {
+
+        height: 590px;
+        width: 390px;
+        background-color: #fff;
+        /* background-clip: border-box; */
+        /* box-shadow: 10px 5px 10px blue inset,-10px -5px 10px red inset; */
+        box-shadow: 0px 0px 2px 20px #dddddd74;
+
+
+
+
+    }
+
+    #head {
+
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    label {
+
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: 400;
+
+
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+
+        padding: 10px 0px;
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .errr1 {
+
+        text-align: left;
+        color: red;
+        margin-left: 20px;
+    }
+
+    .sbmit1 {
+
+
+        padding: 10px 0px;
+        width: 80%;
+        margin: 20px 0px 0px 20px;
+        border: none;
+        background-color: rgb(0, 221, 255);
+
+    }
+
+    input[type="text"]:focus-visible {
+
+        outline: none;
+    }
+
+    input[type="email"]:focus-visible {
+
+        outline: none;
+    }
+
+    input[type="password"]:focus-visible {
+
+        outline: none;
+    }
+</style>
+
+<body>
+
+    <div class="main">
+
+        <h1 id="head">Sign Up</h1>
+
+        <div class="main-container">
+
+            <form action="">
+
+                <label for="">Username:</label><br>
+                <input type="text" name="" id="username" onblur=" return checkuser()">
+                <p id="err1" class="errr1"></p>
+
+                <label for="">Email:</label><br>
+                <input type="email" name="" id="email1" onkeyup="return email_ex()">
+                <p id="err2" class="errr1"></p>
+
+                <label for="">Password:</label><br>
+                <input type="password" name="" id="password1" onkeyup="return pass_ex()">
+                <p id="err3" class="errr1"></p>
+
+                <label for="">Confirm Password:</label><br>
+                <input type="password" name="" id="Confirm" onkeyup=" return confirm()">
+                <p id="err4" class="errr1"></p>
+
+                <input type="submit" value="SIGN UP" class="sbmit1" onclick="return checkemail(),pass_check()">
+
+
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+
+        function checkuser() {
+
+            let user = document.getElementById("username").value;
+
+            if (user.length < 3 || user.length > 25) {
+
+                document.getElementById("err1").innerText = "Username must be between 3 and 25 character";
+                document.getElementById("username").innerHTML = "<style>#username{border: 2px solid red}</style>";
+                return false;
+            }
+
+        }
+
+
+
+        // <!--Email-id-->
+
+        function checkemail() {
+
+            let email = document.getElementById("email1").value;
+
+            if (email == "" || email == null) {
+
+                document.getElementById("email1").innerHTML = "<style>#email1{border: 2px solid red}</style>";
+                return false;
+            } else {
+
+                document.getElementById("email1").innerHTML = "<style>#email1{border: 2px solid green}</style>";
+                return false;
+
+            }
+
+
+        }
+
+        function email_ex() {
+
+            let email = document.getElementById("email1").value;
+
+            let regx = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+
+            if (regx.test(email)) {
+
+                document.getElementById("email1").innerHTML = "";
+                return false
+
+            } else {
+
+                document.getElementById("email1").innerHTML = "<style>#email1{border: 2px solid red}</style>";
+                return false;
+            }
+        }
+
+
+
+
+        // <!---password--->
+
+        function pass_check() {
+
+            let pass = document.getElementById("password1").value;
+
+            if (pass.length < 8) {
+
+                document.getElementById("err3").innerText = "Password must be at least 8 characters long and include at least 1 lowercase, 1 uppercase, 1 number, and 1 special character in (!@#$%^&*). ";
+                document.getElementById("password1").innerHTML = "<style>#password1{border: 2px solid red}</style>";
+                return false;
+            }
+
+
+        }
+
+
+
+        function pass_ex() {
+
+            let pass = document.getElementById("password1").value;
+
+            let regex1 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/;
+
+            if (!regex1.test(pass)) {
+
+                document.getElementById("err3").innerHTML = "Password must be at least 8 characters long and include at least 1 lowercase, 1 uppercase, 1 number, and 1 special character in (!@#$%^&*). ";
+                document.getElementById("password1").innerHTML = "<style>#password1{border: 2px solid red}</style>";
+                return false;
+
+
+            } else {
+
+                document.getElementById("err3").innerHTML = "";
+                document.getElementById("password1").innerHTML = "";
+                return false;
+
+            }
+
+        }
+
+
+        function confirm() {
+
+            let pass = document.getElementById("password1").value;
+
+            let pass1 = document.getElementById("Confirm").value;
+
+            if (pass != pass1) {
+
+
+                document.getElementById("err4").innerText = "Please enter the password again";
+                return false;
+            } else {
+
+                document.getElementById("err4").innerText = "";
+                return false;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

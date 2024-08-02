@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- Q.(24) Write to print Fibonacci series up to given numbers? -->
+
+
+    <script>
+
+        let x = 0;
+        let y = 1;
+
+        let n = prompt("Please enter a number");
+
+        // console.log(x);
+        // console.log(y);
+
+        for(let i = 0; i <= n; i++){
+
+            let count = x + y;
+            document.write(count,"<br>");
+            x = y;
+            y = count;
+        }
+    </script>
+    
+</body>
+</html>

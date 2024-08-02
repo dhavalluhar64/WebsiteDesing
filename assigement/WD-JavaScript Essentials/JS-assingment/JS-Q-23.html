@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Q.(23) Write to print factorial of given number? -->
+
+
+    <script>
+
+
+        let num = 5;
+
+        let fact = 1;
+
+
+        function factor(n) {
+
+            if (n > num) {
+
+                return;
+
+            }
+
+            let count = fact;
+
+            fact *= n;
+            n++;
+            factor(n);
+        }
+        factor(1);
+
+        console.log("The fact of ", num, "is", fact);
+
+
+
+    </script>
+
+
+</body>
+
+</html>

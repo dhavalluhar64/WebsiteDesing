@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .main {
+
+        background-color: rgba(0, 0, 255, 0.638);
+        height: 300px;
+        width: 400px;
+        text-align: center;
+
+    }
+
+    .container {
+
+        margin-top: 70px;
+        position: relative;
+
+    }
+
+    .type1 {
+
+        width: 50%;
+        padding: 10px 12px;
+    }
+
+    span {
+
+        position: absolute;
+        left: 70%;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+
+            <input type="password" id="typepass" class="type1">
+            <span><i class="fa-solid fa-eye" id="eyecon1"></i></span>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let eyecon = document.getElementById('eyecon1');
+
+        let password = document.getElementById('typepass');
+
+        eyecon.onclick = function () {
+
+            if (password.type == "password") {
+
+                password.type = "text";
+
+                
+            } else {
+
+                password.type = "password";
+                
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
