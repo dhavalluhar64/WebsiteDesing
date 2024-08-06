@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+
+    }
+
+    .main {
+
+        height: 500px;
+        background-color: yellow;
+        width: 90%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+
+    }
+
+    .main p {
+
+        font-size: 30px;
+        width: 100%;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .btn {
+
+        position: absolute;
+        bottom: 30px;
+
+
+    }
+
+    h5 {
+
+        text-align: center;
+        padding-top: 30px;
+
+    }
+
+    .btn .button1 {
+
+        margin-right: 40px;
+        padding: 12px 20px;
+        border-radius: 50px;
+        border: none;
+        background-color: yellow;
+        cursor: pointer;
+
+    }
+
+    .btn .button2 {
+
+        margin-right: 40px;
+        padding: 12px 20px;
+        border-radius: 50px;
+        border: none;
+        background-color: yellow;
+        cursor: pointer;
+    }
+
+    .button3 {
+
+        padding: 12px 20px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+
+
+    }
+</style>
+
+<body>
+
+    <div class="main">
+        <p>Slide Toggle/ SlideUp/ SlideDown</p>
+        <h5>Pure JavaScript</h5>
+    </div>
+
+    <div class="btn">
+        <button id="btn1" class="button1">SlideUp</button>
+        <button id="btn2" class="button2">SlideDown</button>
+        <button id="btn3" class="button3">SlideToggle</button>
+    </div>
+
+
+
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#btn1").click(function () {
+
+                $(".main").slideUp(1000);
+            })
+            $("#btn2").click(function () {
+
+                $(".main").slideDown(1000);
+            })
+
+            $("#btn3").click(function () {
+
+                $(".main").slideToggle(1000);
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+        background: linear-gradient(to bottom, #00c3ff, #0044ff);
+        padding: 20px;
+    }
+
+    .slider {
+        display: flex;
+        width: 100%;
+        animation: slide 100s infinite;
+    }
+
+    .slide {
+        width: 16.66%;
+        height: 500px;
+        margin: 20px;
+    }
+
+    #red {
+
+        background-color: red;
+    }
+
+    #cyan {
+
+        background-color: cyan;
+    }
+
+    #lightgreen {
+
+        background-color: lightgreen;
+    }
+
+    #black {
+
+        background-color: black;
+    }
+
+    #pink {
+
+        background-color: pink;
+    }
+
+    #darkred {
+
+        background-color: darkred;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0%);
+        }
+
+        20% {
+            transform: translateX(-100%);
+        }
+
+        40% {
+            transform: translateX(-200%);
+        }
+
+        60% {
+            transform: translateX(-300%);
+        }
+
+        80% {
+            transform: translateX(-400%);
+        }
+
+        100% {
+            transform: translateX(-500%);
+        }
+    }
+</style>
+
+<body>
+
+
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide" id="red"></div>
+            <div class="slide" id="cyan"></div>
+            <div class="slide" id="lightgreen"></div>
+            <div class="slide" id="black"></div>
+            <div class="slide" id="pink"></div>
+            <div class="slide" id="darkred"></div>
+        </div>
+    </div>
+    <script>
+
+        $(document).ready(function () {
+            function changeBackgroundColor() {
+                $(".slider-container").animate({ backgroundColor: "#00c3ff" }, 1000)
+                    .animate({ backgroundColor: "#0044ff" }, 1000, changeBackgroundColor);
+
+            }
+
+            changeBackgroundColor();
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    body {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .main {
+
+        background-color: darkcyan;
+        height: 300px;
+        width: 400px;
+        text-align: center;
+
+    }
+
+    .main .head1 {
+
+        text-transform: capitalize;
+        font-weight: 400;
+        background-color: white;
+        width: 90%;
+        margin: 30px auto;
+        color: blue;
+
+
+
+    }
+
+    .container {
+
+        margin-top: 60px;
+        position: relative;
+
+    }
+
+    .type1 {
+
+        width: 50%;
+        padding: 10px 12px;
+    }
+
+    span {
+
+        position: absolute;
+        left: 68%;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+
+    .hide {
+
+        display: none;
+        position: absolute;
+        bottom: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="main">
+
+        <h1 class="head1">show and hide password</h1>
+
+        <div class="container">
+
+            <input type="password" id="typepass" class="type1">
+            <span class="hide" id="hd">Hide</span>
+            <span id="sw">Show</span>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#sw").click(function () {
+
+                $("#typepass").attr("type", "text");
+                $("#sw").hide();
+                $("#hd").show();
+            })
+
+            $("#hd").click(function () {
+
+                $("#typepass").attr("type", "password");
+                $("#hd").hide();
+                $("#sw").show();
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>
