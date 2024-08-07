@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .main {
+
+        height: 400px;
+        width: 40%;
+        border: 5px solid goldenrod;
+        position: relative;
+
+    }
+
+    .can6 {
+
+        position: absolute;
+        top: 12%;
+        left: 5%;
+    }
+
+    .can7 {
+
+        position: absolute;
+        top: 10%;
+        right: 10%;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <canvas id="canvas1" class="can5" width="200px" height="200px"></canvas>
+
+        <canvas id="canvas2" class="can6" width="600px" height="400px"></canvas>
+
+        <canvas id="canvas3" class="can7" width="600px" height="400px"></canvas>
+
+
+        <script>
+            let can = document.getElementById("canvas1");
+
+            let create = can.getContext('2d');
+
+            let color = create.createLinearGradient(50, 50, 150, 150);
+
+            color.addColorStop(1, 'red');
+            color.addColorStop(0, 'yellow');
+
+
+            create.fillStyle = color;
+            create.fillRect(50, 50, 100, 100);
+
+
+
+
+
+            let can3 = document.getElementById("canvas2");
+            let create3 = can3.getContext('2d');
+
+            var img = new Image();
+            img.crossOrigin = "Anonymous";
+            img.src = 'https://images.unsplash.com/photo-1502691876148-a84978e59af8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbG9yfGVufDB8fDB8fHww';
+            img.onload = function () {
+                let pattern = create3.createPattern(img, 'repeat');
+                create3.beginPath();
+                create3.arc(250, 50, 50, 0, 2 * Math.PI);
+                create3.fillStyle = pattern;
+                create3.fill();
+            };
+
+
+
+
+
+
+            let can8 = document.getElementById("canvas3");
+            let create4 = can8.getContext('2d');
+
+            create4.fillStyle = 'orange';
+            create4.fillRect(450, 50, 100, 50);
+
+
+        </script>
+
+
+    </div>
+</body>
+
+</html>
