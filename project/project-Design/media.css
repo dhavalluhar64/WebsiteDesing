@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1160px) {}
+
+
+@media only screen and (max-width: 972px) {
+
+    .container {
+
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .nav-link ul li {
+
+        display: block;
+    }
+
+    .nav-link {
+
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        text-align: left;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: .5s linear;
+        /* display: none; */
+
+
+
+    }
+
+    nav .fa-solid {
+
+        display: block;
+        color: #fff;
+        margin: 10px;
+        cursor: pointer;
+
+
+    }
+
+    .nav-link ul {
+
+        padding: 30px;
+
+    }
+
+    /* <!--course---> */
+
+    .row {
+
+        flex-direction: column;
+
+    }
+
+    /* <!--testimonials---> */
+
+    .testimonials-col img {
+
+        margin-right: 15px;
+        margin-left: 0px;
+
+
+    }
+
+    .footer #foot-paragh {
+
+        text-align: center;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {}
