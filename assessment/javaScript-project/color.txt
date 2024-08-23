@@ -1,0 +1,8 @@
+bg-color: #fff;
+main-color: #e55472;
+text-color: #010101;
+2nd-color: #434343;
+other-color: #666666;
+big-font: 5rem;
+h2-font: 2.3rem;
+p-font: 1.3rem;
