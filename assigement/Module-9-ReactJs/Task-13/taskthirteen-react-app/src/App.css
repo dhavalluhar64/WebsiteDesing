@@ -1,0 +1,17 @@
+.btn-login {
+
+  background-color: aqua;
+  width: 120px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.btn-logintwo {
+
+  background-color: red;
+  width: 120px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 17px;
+}

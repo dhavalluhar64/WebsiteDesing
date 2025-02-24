@@ -1,0 +1,25 @@
+{
+  "userdata": [
+    {
+      "id": "1",
+      "name": "dhaval",
+      "lastname": "Panchal",
+      "mobileNo": 7895265878,
+      "course": "Fron-tend Development"
+    },
+    {
+      "id": "1740082143830",
+      "name": "Rohan",
+      "lastname": "Luhar",
+      "mobileNo": "7898566898",
+      "course": "Cyber Security "
+    },
+    {
+      "id": "1740085282822",
+      "name": "Sanket",
+      "lastname": "Suthar",
+      "mobileNo": "5689769849",
+      "course": "Graphic design"
+    }
+  ]
+}
