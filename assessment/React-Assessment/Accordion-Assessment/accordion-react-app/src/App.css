@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #bedfe8;
+}
+
+.accordio {
+  max-width: 800px;
+
+}
+
+.accordio .contenBx {
+
+  position: relative;
+  margin: 10px 20px;
+  width: 100%;
+
+}
+
+.accordio .contenBx .lable {
+
+  position: relative;
+  padding: 10px;
+  background-color: #2694af;
+  color: #fff;
+
+  cursor: pointer;
+
+}
+
+.accordio .contenBx .lable::before {
+
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+
+}
+
+.accordio .contenBx.active .lable::before {
+
+  content: '-';
+}
+
+.accordio .contenBx .content {
+
+  position: relative;
+  background-color: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+
+}
+
+.accordio .contenBx.active .content {
+
+  height: 150px;
+  padding: 10px;
+}
