@@ -1,0 +1,279 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "name": "dhaval",
+      "email": "dhaval456@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Jaimin",
+      "email": "jaimin456@gmail.com",
+      "password": "Jaimin@123",
+      "userImg": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "mobileNo": "654654654",
+      "loginattempt": 0,
+      "status": "unblock"
+    },
+    {
+      "id": "1739904308935",
+      "name": "Dhaval",
+      "email": "dhval@yahoo.com",
+      "password": "Dhaval!23",
+      "userImg": "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "mobileNo": "6546579856",
+      "status": "unblock",
+      "loginattempt": 0
+    }
+  ],
+  "allproducts": [
+    {
+      "fruitsname": "Grapes",
+      "bages": "Fruits",
+      "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "fruitsImg": "https://as1.ftcdn.net/v2/jpg/09/57/92/04/1000_F_957920467_8FBMdsBQsESEBHYfZdakazMeNjoLwPOK.jpg",
+      "price": "2.45",
+      "kg": "4.2kg",
+      "quantity": 1,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "fruitsname": "Raspberries",
+      "bages": "Fruits",
+      "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "fruitsImg": "https://as1.ftcdn.net/v2/jpg/03/13/65/66/1000_F_313656624_ted6KD8DMy5iZ5iYmwRKjj0bHzUHWrqF.jpg",
+      "price": "3.58",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "3",
+      "fruitsname": "Apricots",
+      "bages": "Fruits",
+      "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "fruitsImg": "https://as2.ftcdn.net/v2/jpg/09/25/03/19/1000_F_925031956_pvqDysmZd0aRGur5bm8TvNYgu8eldb1d.webp",
+      "price": "4.45",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "4",
+      "fruitsname": "Banana",
+      "bages": "Fruits",
+      "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "fruitsImg": "https://as1.ftcdn.net/v2/jpg/06/93/61/92/1000_F_693619202_oRgpxyTsVc1x4XDrVqWlwB6cp4KNiEaK.webp",
+      "price": "1.25",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "5",
+      "fruitsname": "Oranges",
+      "bages": "Fruits",
+      "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "fruitsImg": "https://as2.ftcdn.net/v2/jpg/07/00/63/49/1000_F_700634953_2E6c93oVkJaxS1Ne3lvNARF074792Mdh.webp",
+      "price": "2.78",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "6",
+      "fruitsname": "Strawberry",
+      "bages": "Fruits",
+      "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "fruitsImg": "https://img.freepik.com/premium-psd/strawberry-fruit-transparent-background_1314158-1353.jpg?w=740",
+      "price": "5.45",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "7",
+      "fruitsname": "Pineapple",
+      "bages": "Fruits",
+      "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "fruitsImg": "https://images.pexels.com/photos/947879/pexels-photo-947879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "price": "3.20",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "8",
+      "fruitsname": "cherry",
+      "bages": "Fruits",
+      "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "fruitsImg": "https://as2.ftcdn.net/v2/jpg/09/06/01/45/1000_F_906014541_5FLBM8MTyKbxVYAB5cT5B6wAkxRyYsS4.jpg",
+      "price": "2.20",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "9",
+      "vegetablesname": "Tomato",
+      "bages": "Vegetables",
+      "vegetabledetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "vegetableImg": "https://as2.ftcdn.net/v2/jpg/05/37/04/61/1000_F_537046123_s8JVn2NrClPQDOryhSm8jonYZPfIzPRX.webp",
+      "price": "2.30",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "10",
+      "vegetablesname": "cauliflower",
+      "bages": "Vegetables",
+      "vegetabledetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "vegetableImg": "https://as1.ftcdn.net/v2/jpg/00/68/10/58/1000_F_68105885_hf9yIAhaAoa69xgSnwviKsomIh9blBJJ.jpg",
+      "price": "3.45",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "11",
+      "vegetablesname": "Bitter melon",
+      "bages": "Vegetables",
+      "vegetabledetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "vegetableImg": "https://as2.ftcdn.net/v2/jpg/03/89/85/85/1000_F_389858598_TSNp6HysawjDuyAtRrJdru6Kf8LEZXbt.jpg",
+      "price": "4.45",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "12",
+      "vegetablesname": "Ginger",
+      "bages": "Vegetables",
+      "vegetabledetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "vegetableImg": "https://as2.ftcdn.net/v2/jpg/00/81/35/87/1000_F_81358744_jhqbbirZJjXq1x7hMvtdshFdcFuIIAps.jpg",
+      "price": "3.45",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "13",
+      "vegetablesname": "cabbage",
+      "bages": "Vegetables",
+      "vegetabledetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "vegetableImg": "https://as1.ftcdn.net/v2/jpg/03/74/46/68/1000_F_374466842_siU3zJ6Iyw9nlNk4ABnF5AhzRE2q8U0q.jpg",
+      "price": "1.10",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "14",
+      "vegetablesname": "Red pepper",
+      "bages": "Vegetables",
+      "vegetabledetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "vegetableImg": "https://as1.ftcdn.net/v2/jpg/00/41/56/36/1000_F_41563624_7uwpAWialLFinOCfM6U5LpGxLu6Jkqvi.jpg",
+      "price": "2.78",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "15",
+      "vegetablesname": "Cilantro",
+      "bages": "Vegetables",
+      "vegetabledetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "vegetableImg": "https://as1.ftcdn.net/v2/jpg/08/32/38/12/1000_F_832381276_Lm0WW62uGvqXYehiHdiuvPGlrbg12ZJv.jpg",
+      "price": "1.10",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "16",
+      "fruitsname": "Avocado",
+      "bages": "Fruits",
+      "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "fruitsImg": "https://as1.ftcdn.net/v2/jpg/07/11/35/92/1000_F_711359284_LY1hXNW4iQUDL2ZWGptDMRupAmgOK2wH.jpg",
+      "price": "4.25",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "id": "17",
+      "vegetablesname": "Broccoli",
+      "bages": "Vegetables",
+      "vegetabledetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "vegetableImg": "https://as2.ftcdn.net/v2/jpg/00/31/77/07/1000_F_31770750_LNa0xrPdMfHWtipHrOIZKUKJNrldguks.jpg",
+      "price": "5.25",
+      "kg": "4.2kg",
+      "quantity": 1
+    },
+    {
+      "fruitsname": "watermelon",
+      "bages": "Fruits",
+      "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "fruitsImg": "https://as2.ftcdn.net/v2/jpg/02/19/25/41/1000_F_219254126_WuoVr3FSszcmeMNHa9XOiG37mMkUc7Jy.jpg",
+      "price": "2.56",
+      "kg": "1.00 kg",
+      "quantity": 1,
+      "id": "2f49"
+    }
+  ],
+  "BillingCustomer": [
+    {
+      "id": "1739612682963",
+      "firstname": "dhaval",
+      "lastname": "luhar",
+      "companyname": "fruitlbe",
+      "address": {
+        "housenoandstreetname": "amd",
+        "townandcity": "amd",
+        "country": "ind",
+        "postcode": "456256",
+        "mobileno": "7895325689",
+        "oredernotes": "ffsdfsd"
+      },
+      "cart": [
+        {
+          "id": "6",
+          "fruitsname": "Strawberry",
+          "bages": "Fruits",
+          "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+          "fruitsImg": "https://img.freepik.com/premium-psd/strawberry-fruit-transparent-background_1314158-1353.jpg?w=740",
+          "price": "5.45",
+          "kg": "4.2kg",
+          "quantity": 3
+        },
+        {
+          "id": "15",
+          "vegetablesname": "Cilantro",
+          "bages": "Vegetables",
+          "vegetabledetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+          "vegetableImg": "https://as1.ftcdn.net/v2/jpg/08/32/38/12/1000_F_832381276_Lm0WW62uGvqXYehiHdiuvPGlrbg12ZJv.jpg",
+          "price": "1.10",
+          "kg": "4.2kg",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "1739793579241",
+      "firstname": "dfgdfg",
+      "lastname": "dfgd",
+      "companyname": "fgdfg",
+      "address": {
+        "housenoandstreetname": "fdsgsdg",
+        "townandcity": "gdf",
+        "country": "fgdfg",
+        "postcode": "559626",
+        "mobileno": "7889456245",
+        "email": "user1@gmail.com",
+        "oredernotes": "gdffdgdfg"
+      },
+      "cart": [
+        {
+          "id": "1",
+          "fruitsname": "Grapes",
+          "bages": "Fruits",
+          "fruitedetials": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+          "fruitsImg": "https://as1.ftcdn.net/v2/jpg/09/57/92/04/1000_F_957920467_8FBMdsBQsESEBHYfZdakazMeNjoLwPOK.jpg",
+          "price": "2.45",
+          "kg": "4.2kg",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}

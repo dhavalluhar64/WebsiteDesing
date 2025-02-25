@@ -1,0 +1,47 @@
+.custom-color {
+
+  color: #81c408
+}
+
+
+
+.toast-message {
+  background: white;
+  color: #000;
+  font-size: 15px;
+  width: 20vw;
+  padding: 20px 20px;
+}
+
+.userlogin {
+
+  height: calc(730px);
+  background: #6a11cb;
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+
+.userlogin2 {
+
+  background: #6a11cb;
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+.userLoginPro {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.updatediv {
+
+  margin-top: 10%;
+}
+
+.contactform {
+
+  margin-top: 10%;
+}
