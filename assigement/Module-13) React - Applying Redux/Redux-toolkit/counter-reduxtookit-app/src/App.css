@@ -1,0 +1,10 @@
+.input-user {
+
+  border: 1px solid black;
+  /* padding: 6px 0; */
+  margin: 7px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 10px;
+}

@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "user",
+      "email": "dsada@gmail.com",
+      "password": "ffsdfsdf",
+      "image": "https://images.pexels.com/photos/3777557/pexels-photo-3777557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "mobileno": "7987954654"
+    },
+    {
+      "id": "1740835085542",
+      "name": "ram",
+      "email": "ram@gmail.com",
+      "password": "ram@123",
+      "image": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
+      "mobileno": "4846546546"
+    },
+    {
+      "id": "1740835693971",
+      "name": "dfdf",
+      "email": "fsdfsd@gmail.com",
+      "password": "fsdfsdfs",
+      "image": "https://images.pexels.com/photos/16970143/pexels-photo-16970143/free-photo-of-studio-shot-of-an-elegant-man-in-a-suit.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "mobileno": "4654654654"
+    },
+    {
+      "id": "1740835795994",
+      "name": "fsdfsdf",
+      "email": "abelardo4@yahoo.com",
+      "password": "fdfsdf",
+      "image": "https://images.pexels.com/photos/16970143/pexels-photo-16970143/free-photo-of-studio-shot-of-an-elegant-man-in-a-suit.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "mobileno": "54654654"
+    },
+    {
+      "id": "1740835948780",
+      "name": "dfadsf",
+      "email": "user1@gmail.com",
+      "password": "fsdfsd",
+      "image": "https://images.pexels.com/photos/16970143/pexels-photo-16970143/free-photo-of-studio-shot-of-an-elegant-man-in-a-suit.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "mobileno": "6485465465"
+    },
+    {
+      "id": "1741008184971",
+      "name": "jemsbond",
+      "email": "jemsbond@gmail.com",
+      "password": "jemsb@gmail.com",
+      "image": "https://images.pexels.com/photos/16970143/pexels-photo-16970143/free-photo-of-studio-shot-of-an-elegant-man-in-a-suit.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "mobileno": "4986465784"
+    },
+    {
+      "id": "1741008323618",
+      "name": "fdsfsdf",
+      "email": "fsdfsdf@gmail.com",
+      "password": "sfsdfsd",
+      "image": "https://images.pexels.com/photos/16970143/pexels-photo-16970143/free-photo-of-studio-shot-of-an-elegant-man-in-a-suit.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "mobileno": "6544687984"
+    },
+    {
+      "id": "1741084379886",
+      "name": "rock",
+      "email": "rock@gmail.com",
+      "password": "rock@123",
+      "image": "https://images.pexels.com/photos/157675/fashion-men-s-individuality-black-and-white-157675.jpeg",
+      "mobileno": "5894846498"
+    }
+  ],
+  "products": [
+    {
+      "id": "1741262314603",
+      "title": "Navy blue blazer ",
+      "price": "96565",
+      "description": "navy blue blazer is awsome ",
+      "image": "https://img.freepik.com/free-photo/full-length-portrait-handsome-serious-man_171337-17388.jpg?t=st=1741261676~exp=1741265276~hmac=3e811b3039b45c2f1567e8834ba4dfd580d2946f27c780c1cba1d1a6a1f82e99&w=740"
+    }
+  ]
+}
