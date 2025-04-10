@@ -1,0 +1,14 @@
+.toast-message {
+  background: white;
+  color: #000;
+  font-size: 15px;
+  width: 20vw;
+  padding: 20px 20px;
+}
+
+.userLoginPro {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

@@ -1,0 +1,49 @@
+/* Error page Css  */
+
+.body {
+  height: 100vh;
+  background-color: #000;
+  background-image: radial-gradient(#11581E, #041607), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(128, 255, 128, 0.8);
+  font-family: 'Inconsolata', monospace;
+  text-shadow: 0 0 1ex rgba(51, 255, 51, 1), 0 0 2px rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.overlay::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+  background-size: auto 4px;
+}
+
+.a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.a::before {
+  content: "[";
+}
+
+.a::after {
+  content: "]";
+}
+
+.errorcode {
+  color: white;
+}
